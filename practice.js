@@ -134,7 +134,7 @@ var user2 = {
 
 //Create an empty object called methodCollection.
 
-  //Code Here
+  var methodCollection = {};
 
 
 
@@ -145,15 +145,21 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
  which logs 'hello' to the console. 
  */
 
-  //Code Here
 
+ methodCollection.alertHello = function(){
+   alert('hello');
+ }
+ methodCollection.logHello = function (){
+   console.log('hello');
+ }
 
 
 
 
 //Now call your alertHello and logHello methods.
 
-  //Code Here
+  methodCollection.alertHello();
+  methodCollection.logHello();
 
 
 
@@ -168,9 +174,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 // Create a function called makePerson which takes in name, birthday, ssn as its
 // parameters and returns a new object with all of the information that you passed in.
-
-  //Code Here
-
+var person = {  }
+function makePerson(name,birthday,ssn){
+  person.name=name;
+  person.birthday=birthday;
+  person.ssn=ssn;
+  return person;
+}
 
 
 
@@ -184,6 +194,10 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
-  //Code Here
-
+function makeCard(obj,cardNumber,expirationDate,securityCode){
+  obj.cardNumber=cardNumber;
+  obj.expirationDate=expirationDate;
+  obj.securityCode=securityCode;
+  return obj;
+}
 
