@@ -194,10 +194,10 @@ function makePerson(name,birthday,ssn){
 
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
-function makeCard(obj,cardNumber,expirationDate,securityCode){
-  obj.cardNumber=cardNumber;
-  obj.expirationDate=expirationDate;
-  obj.securityCode=securityCode;
-  return obj;
+function makeCard(cardNumber,expirationDate,securityCode){
+  var newCard= {};
+  newCard.cardNumber=cardNumber;
+  newCard.expirationDate=expirationDate;
+  newCard.securityCode=securityCode;
+  return newCard;
 }
-
